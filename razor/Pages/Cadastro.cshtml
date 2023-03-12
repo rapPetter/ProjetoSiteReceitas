@@ -1,0 +1,69 @@
+﻿@page
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@model CadastroModel
+
+@{
+    ViewData["Title"] = "Cadastrar uma receita";
+}
+<div id="ConteinerSupremo">
+    <h1>@ViewData["Title"]</h1>
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <div id="painel">
+            <form id="formulario-cadastro" method="post">
+                <div class="formulario">
+                    <input id="titulo" type="text" size="30" minlength="4" maxlength="64" placeholder="Ex: Frango Frito"
+                        required>
+                    <label id="labelTitulo" for="titulo">Titulo</label>
+                </div>
+                <div class="conteinerTempoPorção">
+                    <div class="formulario">
+                        <div class="formulario-modi">
+                            <input id="tempoPreparo" type="number" required>
+                            <div>
+                                Minutos
+                            </div>
+                        </div>
+                        <label id="labelTempoPreparo" for="ingredientes">Tempo de preparo</label>
+                    </div>
+                    <div class="formulario">
+                        <div class="formulario-modi">
+                            <input id="porcoes" type="number" required>
+                            <div>
+                                Porções
+                            </div>
+                        </div>
+                        <label id="labelporcoes" for="porcoes">Quantas porções rende</label>
+                    </div>
+                </div>
+                <div class="formulario">
+                    <textarea aria-label="Caixa de texto de ingredientes" cols="40" id="ingredientes" placeholder="
+                        Ex: 03 ovos ,
+                         400 g de frango, 
+                         2 cebolas" rows="10" minlength="5" required></textarea>
+                    <label id="labelIngredientes" for="ingredientes">Ingredientes da Receita:</label>
+                </div>
+                <div class="formulario">
+                    <textarea id="descricao" rows="5" cols="50" minlength="32" maxlength="512"
+                        placeholder="Pegar as 400 g de frango e colocar para fritar..." required></textarea>
+                    <label id="labelDescricao" for="descricao">Descrição do modo de preparo:</label>
+                </div>
+                <div class="conteinerbotao">
+                    <button type="reset" id="btnLimpar">Limpar</button>
+                    <button id="ok">Salvar Receita</button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            window.userName = '@User.Identity.Name';    
+        </script>
+    }
+</div>
+
+<script src="./js/script.js" defer></script>
+<link rel="stylesheet" href="./css/formulario.css">

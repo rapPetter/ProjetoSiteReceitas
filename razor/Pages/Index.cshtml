@@ -1,0 +1,43 @@
+﻿@page
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<link rel="stylesheet" href="./css/site.css">
+
+@model IndexModel
+@{
+    ViewData["Title"] = "ReceitaRafaTop";
+}
+
+<div class="text-center">
+    <main class="q-layout-page" id="category_page" style="min-height: 100vh;">
+
+        <div class="header-block">
+            <h1>@ViewData["Title"]</h1>              
+                <div class="Busca">
+                    <input id="search" name="busca" autocomplete="on" dir="auto" type="search"
+                        placeholder="Encontrar..." step="any">
+                         <button id="btnPesquisa">  <img src="./images/procurar.png" alt="Botão de busca."></button>
+                         <button id="btnLimparCampos"><img src="./images/limpar.png" alt="imagem de limpar a pesquisa!"></button>                   
+                </div>
+                <samp id="mostrarBuscaOK"></samp>
+
+        </div>
+
+
+
+        <div class="banco">
+            <div id="cadastroTotal">
+                <ul id="cadastroInterno">
+
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+
+    <hr>
+</div>

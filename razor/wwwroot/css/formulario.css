@@ -1,0 +1,125 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-image:  url("/images/vegetal.jpg");
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+#painel{
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+
+  margin-bottom: 30px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #dfdede;
+  padding: 10px;
+  max-width: 50%;
+
+}
+.formulario input , textarea, select{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block; /* para ficar fixo na linha */
+  border: 0;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  padding-top: 18px;
+}
+
+textarea{
+  height: 250px;
+  resize: none;
+}
+
+
+.formulario{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: space-around;
+}
+.formulario input:focus , textarea:focus, select:focus{
+  border-bottom: 2px solid rgb(189, 211, 189);
+}
+.formulario label{
+  color:black;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.formulario  input:focus +label , textarea:focus +label, select:focus +label ,
+.formulario input:valid +label , textarea:valid +label, select:valid +label{
+  font-size: 13px;
+  margin-top: 0;
+  color: white;
+}
+.formulario-modi{
+  display: flex;
+  flex-direction: row;
+}
+.formulario-modi div{
+ margin-top: 15px;
+}
+
+.conteinerbotao{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.conteinerbotao button{
+  flex-grow: 1;
+  background-color: transparent;
+  border-color: black;
+  color: black;
+  padding: 7px;
+  font-weight: 12pt;
+  margin: 20px 0px 0px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+.conteinerbotao button:hover, .Busca button:hover{
+  background-color: rgb(199, 191, 191);
+  font-weight: bold;
+  color: rgb(3, 3, 3);
+}
+
+.conteinerTempoPorção {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

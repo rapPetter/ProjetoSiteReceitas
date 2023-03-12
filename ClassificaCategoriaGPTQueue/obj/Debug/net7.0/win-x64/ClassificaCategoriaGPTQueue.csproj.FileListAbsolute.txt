@@ -1,0 +1,5 @@
+C:\Users\Rafael\Desktop\ProjetoSiteReceita\ClassificaCategoriaGPTQueue\obj\Debug\net7.0\win-x64\ClassificaCategoriaGPTQueue.csproj.AssemblyReference.cache
+C:\Users\Rafael\Desktop\ProjetoSiteReceita\ClassificaCategoriaGPTQueue\obj\Debug\net7.0\win-x64\ClassificaCategoriaGPTQueue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rafael\Desktop\ProjetoSiteReceita\ClassificaCategoriaGPTQueue\obj\Debug\net7.0\win-x64\ClassificaCategoriaGPTQueue.AssemblyInfoInputs.cache
+C:\Users\Rafael\Desktop\ProjetoSiteReceita\ClassificaCategoriaGPTQueue\obj\Debug\net7.0\win-x64\ClassificaCategoriaGPTQueue.AssemblyInfo.cs
+C:\Users\Rafael\Desktop\ProjetoSiteReceita\ClassificaCategoriaGPTQueue\obj\Debug\net7.0\win-x64\ClassificaCategoriaGPTQueue.csproj.CoreCompileInputs.cache
